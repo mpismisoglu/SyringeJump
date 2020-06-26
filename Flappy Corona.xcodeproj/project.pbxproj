@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,12 @@
 		AC59B53624A661E000369F36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC59B53424A661E000369F36 /* LaunchScreen.storyboard */; };
 		AC59B54124A661E000369F36 /* Flappy_CoronaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC59B54024A661E000369F36 /* Flappy_CoronaTests.swift */; };
 		AC59B54C24A661E000369F36 /* Flappy_CoronaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC59B54B24A661E000369F36 /* Flappy_CoronaUITests.swift */; };
+		AC59B55A24A6625100369F36 /* pass.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC59B55924A6625100369F36 /* pass.wav */; };
+		ACB46FAF24A6656700F90B65 /* flap.wav in Resources */ = {isa = PBXBuildFile; fileRef = ACB46FAE24A6656700F90B65 /* flap.wav */; };
+		ACB46FB124A6656A00F90B65 /* death.wav in Resources */ = {isa = PBXBuildFile; fileRef = ACB46FB024A6656900F90B65 /* death.wav */; };
+		AD10E48EFFF1D7718D90F349 /* Pods_Flappy_Corona.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6D9A79017E8D92005A0893 /* Pods_Flappy_Corona.framework */; };
+		B11300437FF252E715558575 /* Pods_Flappy_CoronaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7528D0CE34E1CAF472BCE6E /* Pods_Flappy_CoronaTests.framework */; };
+		EE556911DA06B4AC9E63E42A /* Pods_Flappy_Corona_Flappy_CoronaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FEFA5E38F7B17ECBED3F730 /* Pods_Flappy_Corona_Flappy_CoronaUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AC59B52224A661DD00369F36 /* Flappy Corona.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flappy Corona.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1319E4C52EB1516B52AD5AE9 /* Pods-Flappy Corona.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flappy Corona.debug.xcconfig"; path = "Target Support Files/Pods-Flappy Corona/Pods-Flappy Corona.debug.xcconfig"; sourceTree = "<group>"; };
+		3DD79C3D246594014A32778E /* Pods-Flappy CoronaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flappy CoronaTests.debug.xcconfig"; path = "Target Support Files/Pods-Flappy CoronaTests/Pods-Flappy CoronaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		443DF3B8538C385F2ABA9FBA /* Pods-Flappy CoronaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flappy CoronaTests.release.xcconfig"; path = "Target Support Files/Pods-Flappy CoronaTests/Pods-Flappy CoronaTests.release.xcconfig"; sourceTree = "<group>"; };
+		5A7C2F8B6E677F04F6D893AC /* Pods-Flappy Corona-Flappy CoronaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flappy Corona-Flappy CoronaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Flappy Corona-Flappy CoronaUITests/Pods-Flappy Corona-Flappy CoronaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6FEFA5E38F7B17ECBED3F730 /* Pods_Flappy_Corona_Flappy_CoronaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flappy_Corona_Flappy_CoronaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		931C416C3AC2D92217E849FE /* Pods-Flappy Corona.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flappy Corona.release.xcconfig"; path = "Target Support Files/Pods-Flappy Corona/Pods-Flappy Corona.release.xcconfig"; sourceTree = "<group>"; };
+		AC59B52224A661DD00369F36 /* Syringe Jump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Syringe Jump.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC59B52524A661DD00369F36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC59B52724A661DD00369F36 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		AC59B52924A661DD00369F36 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -53,6 +65,12 @@
 		AC59B54724A661E000369F36 /* Flappy CoronaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flappy CoronaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC59B54B24A661E000369F36 /* Flappy_CoronaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flappy_CoronaUITests.swift; sourceTree = "<group>"; };
 		AC59B54D24A661E000369F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC59B55924A6625100369F36 /* pass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = pass.wav; path = ../../pass.wav; sourceTree = "<group>"; };
+		ACB46FAE24A6656700F90B65 /* flap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = flap.wav; path = ../../flap.wav; sourceTree = "<group>"; };
+		ACB46FB024A6656900F90B65 /* death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = death.wav; path = ../../death.wav; sourceTree = "<group>"; };
+		B3E6FB4C876A0C98F072DEFB /* Pods-Flappy Corona-Flappy CoronaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flappy Corona-Flappy CoronaUITests.release.xcconfig"; path = "Target Support Files/Pods-Flappy Corona-Flappy CoronaUITests/Pods-Flappy Corona-Flappy CoronaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DA6D9A79017E8D92005A0893 /* Pods_Flappy_Corona.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flappy_Corona.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7528D0CE34E1CAF472BCE6E /* Pods_Flappy_CoronaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flappy_CoronaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD10E48EFFF1D7718D90F349 /* Pods_Flappy_Corona.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B11300437FF252E715558575 /* Pods_Flappy_CoronaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +94,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE556911DA06B4AC9E63E42A /* Pods_Flappy_Corona_Flappy_CoronaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B91989F66E1336CD3C15313 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1319E4C52EB1516B52AD5AE9 /* Pods-Flappy Corona.debug.xcconfig */,
+				931C416C3AC2D92217E849FE /* Pods-Flappy Corona.release.xcconfig */,
+				5A7C2F8B6E677F04F6D893AC /* Pods-Flappy Corona-Flappy CoronaUITests.debug.xcconfig */,
+				B3E6FB4C876A0C98F072DEFB /* Pods-Flappy Corona-Flappy CoronaUITests.release.xcconfig */,
+				3DD79C3D246594014A32778E /* Pods-Flappy CoronaTests.debug.xcconfig */,
+				443DF3B8538C385F2ABA9FBA /* Pods-Flappy CoronaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AC59B51924A661DD00369F36 = {
 			isa = PBXGroup;
 			children = (
@@ -87,13 +121,15 @@
 				AC59B53F24A661E000369F36 /* Flappy CoronaTests */,
 				AC59B54A24A661E000369F36 /* Flappy CoronaUITests */,
 				AC59B52324A661DD00369F36 /* Products */,
+				0B91989F66E1336CD3C15313 /* Pods */,
+				E9BA0651E93A8038486F9ABC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		AC59B52324A661DD00369F36 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC59B52224A661DD00369F36 /* Flappy Corona.app */,
+				AC59B52224A661DD00369F36 /* Syringe Jump.app */,
 				AC59B53C24A661E000369F36 /* Flappy CoronaTests.xctest */,
 				AC59B54724A661E000369F36 /* Flappy CoronaUITests.xctest */,
 			);
@@ -107,7 +143,10 @@
 				AC59B52724A661DD00369F36 /* GameScene.sks */,
 				AC59B52924A661DD00369F36 /* Actions.sks */,
 				AC59B52B24A661DD00369F36 /* GameScene.swift */,
+				ACB46FB024A6656900F90B65 /* death.wav */,
+				ACB46FAE24A6656700F90B65 /* flap.wav */,
 				AC59B52D24A661DD00369F36 /* GameViewController.swift */,
+				AC59B55924A6625100369F36 /* pass.wav */,
 				AC59B52F24A661DD00369F36 /* Main.storyboard */,
 				AC59B53224A661E000369F36 /* Assets.xcassets */,
 				AC59B53424A661E000369F36 /* LaunchScreen.storyboard */,
@@ -134,6 +173,16 @@
 			path = "Flappy CoronaUITests";
 			sourceTree = "<group>";
 		};
+		E9BA0651E93A8038486F9ABC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA6D9A79017E8D92005A0893 /* Pods_Flappy_Corona.framework */,
+				6FEFA5E38F7B17ECBED3F730 /* Pods_Flappy_Corona_Flappy_CoronaUITests.framework */,
+				E7528D0CE34E1CAF472BCE6E /* Pods_Flappy_CoronaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC59B55024A661E000369F36 /* Build configuration list for PBXNativeTarget "Flappy Corona" */;
 			buildPhases = (
+				D6794DED4E7D6DE913A9F622 /* [CP] Check Pods Manifest.lock */,
 				AC59B51E24A661DD00369F36 /* Sources */,
 				AC59B51F24A661DD00369F36 /* Frameworks */,
 				AC59B52024A661DD00369F36 /* Resources */,
+				31281C758021B5761C68C824 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,13 +202,14 @@
 			);
 			name = "Flappy Corona";
 			productName = "Flappy Corona";
-			productReference = AC59B52224A661DD00369F36 /* Flappy Corona.app */;
+			productReference = AC59B52224A661DD00369F36 /* Syringe Jump.app */;
 			productType = "com.apple.product-type.application";
 		};
 		AC59B53B24A661E000369F36 /* Flappy CoronaTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC59B55324A661E000369F36 /* Build configuration list for PBXNativeTarget "Flappy CoronaTests" */;
 			buildPhases = (
+				BDE0D7B26A71D180EA69EAA1 /* [CP] Check Pods Manifest.lock */,
 				AC59B53824A661E000369F36 /* Sources */,
 				AC59B53924A661E000369F36 /* Frameworks */,
 				AC59B53A24A661E000369F36 /* Resources */,
@@ -176,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC59B55624A661E000369F36 /* Build configuration list for PBXNativeTarget "Flappy CoronaUITests" */;
 			buildPhases = (
+				936E413094D159CF297F2A93 /* [CP] Check Pods Manifest.lock */,
 				AC59B54324A661E000369F36 /* Sources */,
 				AC59B54424A661E000369F36 /* Frameworks */,
 				AC59B54524A661E000369F36 /* Resources */,
+				C8245C380E08CA546A49F12A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,8 +295,11 @@
 				AC59B53124A661DD00369F36 /* Main.storyboard in Resources */,
 				AC59B52824A661DD00369F36 /* GameScene.sks in Resources */,
 				AC59B53324A661E000369F36 /* Assets.xcassets in Resources */,
+				ACB46FB124A6656A00F90B65 /* death.wav in Resources */,
+				AC59B55A24A6625100369F36 /* pass.wav in Resources */,
 				AC59B53624A661E000369F36 /* LaunchScreen.storyboard in Resources */,
 				AC59B52A24A661DD00369F36 /* Actions.sks in Resources */,
+				ACB46FAF24A6656700F90B65 /* flap.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +318,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31281C758021B5761C68C824 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flappy Corona/Pods-Flappy Corona-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flappy Corona/Pods-Flappy Corona-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Flappy Corona/Pods-Flappy Corona-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		936E413094D159CF297F2A93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flappy Corona-Flappy CoronaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDE0D7B26A71D180EA69EAA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flappy CoronaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8245C380E08CA546A49F12A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flappy Corona-Flappy CoronaUITests/Pods-Flappy Corona-Flappy CoronaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flappy Corona-Flappy CoronaUITests/Pods-Flappy Corona-Flappy CoronaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Flappy Corona-Flappy CoronaUITests/Pods-Flappy Corona-Flappy CoronaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6794DED4E7D6DE913A9F622 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flappy Corona-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC59B51E24A661DD00369F36 /* Sources */ = {
@@ -440,6 +600,7 @@
 		};
 		AC59B55124A661E000369F36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1319E4C52EB1516B52AD5AE9 /* Pods-Flappy Corona.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,14 +611,15 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "mp.Flappy-Corona";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Syringe Jump";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		AC59B55224A661E000369F36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 931C416C3AC2D92217E849FE /* Pods-Flappy Corona.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,14 +630,15 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "mp.Flappy-Corona";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Syringe Jump";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		AC59B55424A661E000369F36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DD79C3D246594014A32778E /* Pods-Flappy CoronaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -498,6 +661,7 @@
 		};
 		AC59B55524A661E000369F36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 443DF3B8538C385F2ABA9FBA /* Pods-Flappy CoronaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -520,6 +684,7 @@
 		};
 		AC59B55724A661E000369F36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A7C2F8B6E677F04F6D893AC /* Pods-Flappy Corona-Flappy CoronaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -540,6 +705,7 @@
 		};
 		AC59B55824A661E000369F36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3E6FB4C876A0C98F072DEFB /* Pods-Flappy Corona-Flappy CoronaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

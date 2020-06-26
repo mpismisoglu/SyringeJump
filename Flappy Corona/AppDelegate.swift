@@ -1,12 +1,13 @@
 //
 //  AppDelegate.swift
-//  Flappy Corona
+//  Corona Jump
 //
-//  Created by Mert Pişmişoğlu on 26.06.2020.
+//  Created by Mert Pişmişoğlu on 15.06.2020.
 //  Copyright © 2020 Mert Pişmişoğlu. All rights reserved.
 //
 
 import UIKit
+import GoogleMobileAds
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
         return true
     }
 
@@ -26,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+        
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
@@ -38,4 +41,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
+
 

@@ -1,20 +1,25 @@
-//
-//  GameViewController.swift
-//  Flappy Corona
-//
-//  Created by Mert Pişmişoğlu on 26.06.2020.
-//  Copyright © 2020 Mert Pişmişoğlu. All rights reserved.
-//
 
 import UIKit
 import SpriteKit
 import GameplayKit
+import GoogleMobileAds
 
-class GameViewController: UIViewController {
-
+class GameViewController: UIViewController, GADBannerViewDelegate {
+    
+let defaults = UserDefaults()
+    var bannerView: GADBannerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+
+        addBannerViewToView(bannerView)
+        bannerView.adUnitID = "ca-app-pub-3407628874905272/6133750310"
+         bannerView.rootViewController = self
+         bannerView.load(GADRequest())
+          bannerView.delegate = self
+       
+    
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
             if let scene = SKScene(fileNamed: "GameScene") {
@@ -22,15 +27,30 @@ class GameViewController: UIViewController {
                 scene.scaleMode = .aspectFill
                 
                 // Present the scene
+              
                 view.presentScene(scene)
+                
+            
+              
             }
             
             view.ignoresSiblingOrder = true
+           
+            let config = UIGraphicsImageRendererFormat()
+            config.opaque = true
             
-            view.showsFPS = true
-            view.showsNodeCount = true
+            
+            
         }
+       
     }
+    
+  
+   
+  
+    
+    
+   
 
     override var shouldAutorotate: Bool {
         return true
@@ -47,4 +67,30 @@ class GameViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+     bannerView.translatesAutoresizingMaskIntoConstraints = false
+     view.addSubview(bannerView)
+     view.addConstraints(
+       [NSLayoutConstraint(item: bannerView,
+                           attribute: .bottom,
+                           relatedBy: .equal,
+                           toItem: bottomLayoutGuide,
+                           attribute: .top,
+                           multiplier: 1,
+                           constant: 0),
+        NSLayoutConstraint(item: bannerView,
+                           attribute: .centerX,
+                           relatedBy: .equal,
+                           toItem: view,
+                           attribute: .centerX,
+                           multiplier: 1,
+                           constant: 0)
+       ])
+    }
+    
+    
+    
+ 
+    
 }
+
