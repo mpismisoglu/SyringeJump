@@ -21,7 +21,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
   var ground = SKSpriteNode()
     var ghost = SKSpriteNode()
     var wallPair = SKNode()
-    
+    var background = SKSpriteNode()
+    var background2 = SKSpriteNode()
+    var background3 = SKSpriteNode()
+
     var audioPlayer = AVAudioPlayer()
     let coinSound = SKAction.playSoundFileNamed("pass.wav", waitForCompletion: false)
     let deathSound = SKAction.playSoundFileNamed("death.wav", waitForCompletion: false)
@@ -78,11 +81,24 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
              start.run(SKAction.scale(to: 3.0, duration: 0.3))
         
-        let background = SKSpriteNode(imageNamed: "Background2")
-               background.position = CGPoint(x: self.frame.width/2, y: self.frame.height/2)
-        background.setScale(1)
+        background = SKSpriteNode(imageNamed: "Background2")
+        background.position = CGPoint(x: self.frame.width/2, y: self.frame.height/2)
+        background.size = CGSize(width: self.frame.width+5, height: self.frame.height)
+
+        
+        background2 = SKSpriteNode(imageNamed: "Background2")
+        background2.position = CGPoint(x: self.frame.width*1.5 , y: self.frame.height/2)
+        background2.size = CGSize(width: self.frame.width+5, height: self.frame.height)
+
+        
+        background3 = SKSpriteNode(imageNamed: "Background2")
+        background3.position = CGPoint(x: self.frame.width*2.5, y: self.frame.height/2)
+        background3.size = CGSize(width: self.frame.width+5, height: self.frame.height)
+
        
         addChild(background)
+        addChild(background2)
+        addChild(background3)
    highscore = self.defaults.integer(forKey: "hs")
 
         
@@ -109,7 +125,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                
                
                
-               ghost = SKSpriteNode(imageNamed: "corona")
+               ghost = SKSpriteNode(imageNamed: "user")
                ghost.size = CGSize(width: 175, height: 175)
                ghost.position = CGPoint(x: self.frame.width/3, y: self.frame.height / 2)
         ghost.physicsBody = SKPhysicsBody(circleOfRadius: ghost.frame.height/3.25)
@@ -330,6 +346,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         if gameStarted == false {
+            
+            let parallax = SKAction.repeatForever(SKAction.move(by: CGVector(dx:-self.frame.size.width, dy:0), duration:2.35))
+
+                          background.run(parallax)
+                          background2.run(parallax)
+                          background3.run(parallax)
             gameStarted = true
           run(flapSound)
             start.run(SKAction.scale(to: 0.001, duration: 0.3))
@@ -427,8 +449,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                        bottomWall.physicsBody?.affectedByGravity = false
                        bottomWall.physicsBody?.isDynamic = false
                
-            self.wallPair.addChild(topWall)
-            self.wallPair.addChild(bottomWall)
+           
 
                 
                 
@@ -449,13 +470,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                               scoreNode.physicsBody?.collisionBitMask = 0
                               scoreNode.physicsBody?.contactTestBitMask = Physics.ghost
                               
+           
+             DispatchQueue.main.async{
+                self.wallPair.addChild(topWall)
+                self.wallPair.addChild(bottomWall)
             self.wallPair.addChild(scoreNode)
 
             self.addChild(self.wallPair)
                 
             
             self.wallPair.run(self.moveAndRemove)
-
+            }
             
             
             
@@ -468,7 +493,21 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     
         
-     
+    override func update(_ currentTime: TimeInterval) {
+        
+        if background.position.x <= -self.frame.size.width/2 {
+            background.position.x = self.frame.size.width*2.5
+                      
+                  }
+               if background2.position.x <= -self.frame.size.width/2{
+                background2.position.x = self.frame.size.width*2.5
+                     
+                  }
+               if background3.position.x <= -self.frame.size.width/2{
+                background3.position.x = self.frame.size.width*2.5
+                   
+                  }
+    }
    
 }
 

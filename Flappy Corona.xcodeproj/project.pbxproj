@@ -17,9 +17,9 @@
 		AC59B53624A661E000369F36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC59B53424A661E000369F36 /* LaunchScreen.storyboard */; };
 		AC59B54124A661E000369F36 /* Flappy_CoronaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC59B54024A661E000369F36 /* Flappy_CoronaTests.swift */; };
 		AC59B54C24A661E000369F36 /* Flappy_CoronaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC59B54B24A661E000369F36 /* Flappy_CoronaUITests.swift */; };
-		AC59B55A24A6625100369F36 /* pass.wav in Resources */ = {isa = PBXBuildFile; fileRef = AC59B55924A6625100369F36 /* pass.wav */; };
-		ACB46FAF24A6656700F90B65 /* flap.wav in Resources */ = {isa = PBXBuildFile; fileRef = ACB46FAE24A6656700F90B65 /* flap.wav */; };
-		ACB46FB124A6656A00F90B65 /* death.wav in Resources */ = {isa = PBXBuildFile; fileRef = ACB46FB024A6656900F90B65 /* death.wav */; };
+		ACBCD5B624A6F06F0082A3B6 /* pass.wav in Resources */ = {isa = PBXBuildFile; fileRef = ACBCD5B324A6F06F0082A3B6 /* pass.wav */; };
+		ACBCD5B724A6F06F0082A3B6 /* flap.wav in Resources */ = {isa = PBXBuildFile; fileRef = ACBCD5B424A6F06F0082A3B6 /* flap.wav */; };
+		ACBCD5B824A6F06F0082A3B6 /* death.wav in Resources */ = {isa = PBXBuildFile; fileRef = ACBCD5B524A6F06F0082A3B6 /* death.wav */; };
 		AD10E48EFFF1D7718D90F349 /* Pods_Flappy_Corona.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6D9A79017E8D92005A0893 /* Pods_Flappy_Corona.framework */; };
 		B11300437FF252E715558575 /* Pods_Flappy_CoronaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7528D0CE34E1CAF472BCE6E /* Pods_Flappy_CoronaTests.framework */; };
 		EE556911DA06B4AC9E63E42A /* Pods_Flappy_Corona_Flappy_CoronaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FEFA5E38F7B17ECBED3F730 /* Pods_Flappy_Corona_Flappy_CoronaUITests.framework */; };
@@ -65,9 +65,9 @@
 		AC59B54724A661E000369F36 /* Flappy CoronaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flappy CoronaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC59B54B24A661E000369F36 /* Flappy_CoronaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flappy_CoronaUITests.swift; sourceTree = "<group>"; };
 		AC59B54D24A661E000369F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC59B55924A6625100369F36 /* pass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = pass.wav; path = ../../pass.wav; sourceTree = "<group>"; };
-		ACB46FAE24A6656700F90B65 /* flap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = flap.wav; path = ../../flap.wav; sourceTree = "<group>"; };
-		ACB46FB024A6656900F90B65 /* death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = death.wav; path = ../../death.wav; sourceTree = "<group>"; };
+		ACBCD5B324A6F06F0082A3B6 /* pass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = pass.wav; path = ../../../pass.wav; sourceTree = "<group>"; };
+		ACBCD5B424A6F06F0082A3B6 /* flap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = flap.wav; path = ../../../flap.wav; sourceTree = "<group>"; };
+		ACBCD5B524A6F06F0082A3B6 /* death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = death.wav; path = ../../../death.wav; sourceTree = "<group>"; };
 		B3E6FB4C876A0C98F072DEFB /* Pods-Flappy Corona-Flappy CoronaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flappy Corona-Flappy CoronaUITests.release.xcconfig"; path = "Target Support Files/Pods-Flappy Corona-Flappy CoronaUITests/Pods-Flappy Corona-Flappy CoronaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DA6D9A79017E8D92005A0893 /* Pods_Flappy_Corona.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flappy_Corona.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7528D0CE34E1CAF472BCE6E /* Pods_Flappy_CoronaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flappy_CoronaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,10 +143,10 @@
 				AC59B52724A661DD00369F36 /* GameScene.sks */,
 				AC59B52924A661DD00369F36 /* Actions.sks */,
 				AC59B52B24A661DD00369F36 /* GameScene.swift */,
-				ACB46FB024A6656900F90B65 /* death.wav */,
-				ACB46FAE24A6656700F90B65 /* flap.wav */,
+				ACBCD5B524A6F06F0082A3B6 /* death.wav */,
+				ACBCD5B424A6F06F0082A3B6 /* flap.wav */,
+				ACBCD5B324A6F06F0082A3B6 /* pass.wav */,
 				AC59B52D24A661DD00369F36 /* GameViewController.swift */,
-				AC59B55924A6625100369F36 /* pass.wav */,
 				AC59B52F24A661DD00369F36 /* Main.storyboard */,
 				AC59B53224A661E000369F36 /* Assets.xcassets */,
 				AC59B53424A661E000369F36 /* LaunchScreen.storyboard */,
@@ -295,11 +295,11 @@
 				AC59B53124A661DD00369F36 /* Main.storyboard in Resources */,
 				AC59B52824A661DD00369F36 /* GameScene.sks in Resources */,
 				AC59B53324A661E000369F36 /* Assets.xcassets in Resources */,
-				ACB46FB124A6656A00F90B65 /* death.wav in Resources */,
-				AC59B55A24A6625100369F36 /* pass.wav in Resources */,
+				ACBCD5B824A6F06F0082A3B6 /* death.wav in Resources */,
+				ACBCD5B624A6F06F0082A3B6 /* pass.wav in Resources */,
 				AC59B53624A661E000369F36 /* LaunchScreen.storyboard in Resources */,
 				AC59B52A24A661DD00369F36 /* Actions.sks in Resources */,
-				ACB46FAF24A6656700F90B65 /* flap.wav in Resources */,
+				ACBCD5B724A6F06F0082A3B6 /* flap.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,10 +606,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3TAQ3RWTX2;
 				INFOPLIST_FILE = "Flappy Corona/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "mp.Flappy-Corona";
 				PRODUCT_NAME = "Syringe Jump";
 				SWIFT_VERSION = 5.0;
@@ -625,10 +627,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3TAQ3RWTX2;
 				INFOPLIST_FILE = "Flappy Corona/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "mp.Flappy-Corona";
 				PRODUCT_NAME = "Syringe Jump";
 				SWIFT_VERSION = 5.0;
