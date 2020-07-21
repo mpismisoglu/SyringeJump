@@ -59,10 +59,10 @@
 		AC59B53224A661E000369F36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC59B53524A661E000369F36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC59B53724A661E000369F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC59B53C24A661E000369F36 /* Flappy CoronaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flappy CoronaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC59B53C24A661E000369F36 /* Syringe JumpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Syringe JumpTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC59B54024A661E000369F36 /* Flappy_CoronaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flappy_CoronaTests.swift; sourceTree = "<group>"; };
 		AC59B54224A661E000369F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC59B54724A661E000369F36 /* Flappy CoronaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flappy CoronaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC59B54724A661E000369F36 /* Syringe JumpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Syringe JumpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC59B54B24A661E000369F36 /* Flappy_CoronaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flappy_CoronaUITests.swift; sourceTree = "<group>"; };
 		AC59B54D24A661E000369F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACBCD5B324A6F06F0082A3B6 /* pass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = pass.wav; path = ../../../pass.wav; sourceTree = "<group>"; };
@@ -117,9 +117,9 @@
 		AC59B51924A661DD00369F36 = {
 			isa = PBXGroup;
 			children = (
-				AC59B52424A661DD00369F36 /* Flappy Corona */,
-				AC59B53F24A661E000369F36 /* Flappy CoronaTests */,
-				AC59B54A24A661E000369F36 /* Flappy CoronaUITests */,
+				AC59B52424A661DD00369F36 /* Syringe Jump */,
+				AC59B53F24A661E000369F36 /* Syringe JumpTests */,
+				AC59B54A24A661E000369F36 /* Syringe JumpUITests */,
 				AC59B52324A661DD00369F36 /* Products */,
 				0B91989F66E1336CD3C15313 /* Pods */,
 				E9BA0651E93A8038486F9ABC /* Frameworks */,
@@ -130,13 +130,13 @@
 			isa = PBXGroup;
 			children = (
 				AC59B52224A661DD00369F36 /* Syringe Jump.app */,
-				AC59B53C24A661E000369F36 /* Flappy CoronaTests.xctest */,
-				AC59B54724A661E000369F36 /* Flappy CoronaUITests.xctest */,
+				AC59B53C24A661E000369F36 /* Syringe JumpTests.xctest */,
+				AC59B54724A661E000369F36 /* Syringe JumpUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AC59B52424A661DD00369F36 /* Flappy Corona */ = {
+		AC59B52424A661DD00369F36 /* Syringe Jump */ = {
 			isa = PBXGroup;
 			children = (
 				AC59B52524A661DD00369F36 /* AppDelegate.swift */,
@@ -152,25 +152,25 @@
 				AC59B53424A661E000369F36 /* LaunchScreen.storyboard */,
 				AC59B53724A661E000369F36 /* Info.plist */,
 			);
-			path = "Flappy Corona";
+			path = "Syringe Jump";
 			sourceTree = "<group>";
 		};
-		AC59B53F24A661E000369F36 /* Flappy CoronaTests */ = {
+		AC59B53F24A661E000369F36 /* Syringe JumpTests */ = {
 			isa = PBXGroup;
 			children = (
 				AC59B54024A661E000369F36 /* Flappy_CoronaTests.swift */,
 				AC59B54224A661E000369F36 /* Info.plist */,
 			);
-			path = "Flappy CoronaTests";
+			path = "Syringe JumpTests";
 			sourceTree = "<group>";
 		};
-		AC59B54A24A661E000369F36 /* Flappy CoronaUITests */ = {
+		AC59B54A24A661E000369F36 /* Syringe JumpUITests */ = {
 			isa = PBXGroup;
 			children = (
 				AC59B54B24A661E000369F36 /* Flappy_CoronaUITests.swift */,
 				AC59B54D24A661E000369F36 /* Info.plist */,
 			);
-			path = "Flappy CoronaUITests";
+			path = "Syringe JumpUITests";
 			sourceTree = "<group>";
 		};
 		E9BA0651E93A8038486F9ABC /* Frameworks */ = {
@@ -186,9 +186,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AC59B52124A661DD00369F36 /* Flappy Corona */ = {
+		AC59B52124A661DD00369F36 /* Syringe Jump */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC59B55024A661E000369F36 /* Build configuration list for PBXNativeTarget "Flappy Corona" */;
+			buildConfigurationList = AC59B55024A661E000369F36 /* Build configuration list for PBXNativeTarget "Syringe Jump" */;
 			buildPhases = (
 				D6794DED4E7D6DE913A9F622 /* [CP] Check Pods Manifest.lock */,
 				AC59B51E24A661DD00369F36 /* Sources */,
@@ -200,14 +200,14 @@
 			);
 			dependencies = (
 			);
-			name = "Flappy Corona";
+			name = "Syringe Jump";
 			productName = "Flappy Corona";
 			productReference = AC59B52224A661DD00369F36 /* Syringe Jump.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AC59B53B24A661E000369F36 /* Flappy CoronaTests */ = {
+		AC59B53B24A661E000369F36 /* Syringe JumpTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC59B55324A661E000369F36 /* Build configuration list for PBXNativeTarget "Flappy CoronaTests" */;
+			buildConfigurationList = AC59B55324A661E000369F36 /* Build configuration list for PBXNativeTarget "Syringe JumpTests" */;
 			buildPhases = (
 				BDE0D7B26A71D180EA69EAA1 /* [CP] Check Pods Manifest.lock */,
 				AC59B53824A661E000369F36 /* Sources */,
@@ -219,14 +219,14 @@
 			dependencies = (
 				AC59B53E24A661E000369F36 /* PBXTargetDependency */,
 			);
-			name = "Flappy CoronaTests";
+			name = "Syringe JumpTests";
 			productName = "Flappy CoronaTests";
-			productReference = AC59B53C24A661E000369F36 /* Flappy CoronaTests.xctest */;
+			productReference = AC59B53C24A661E000369F36 /* Syringe JumpTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AC59B54624A661E000369F36 /* Flappy CoronaUITests */ = {
+		AC59B54624A661E000369F36 /* Syringe JumpUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC59B55624A661E000369F36 /* Build configuration list for PBXNativeTarget "Flappy CoronaUITests" */;
+			buildConfigurationList = AC59B55624A661E000369F36 /* Build configuration list for PBXNativeTarget "Syringe JumpUITests" */;
 			buildPhases = (
 				936E413094D159CF297F2A93 /* [CP] Check Pods Manifest.lock */,
 				AC59B54324A661E000369F36 /* Sources */,
@@ -239,9 +239,9 @@
 			dependencies = (
 				AC59B54924A661E000369F36 /* PBXTargetDependency */,
 			);
-			name = "Flappy CoronaUITests";
+			name = "Syringe JumpUITests";
 			productName = "Flappy CoronaUITests";
-			productReference = AC59B54724A661E000369F36 /* Flappy CoronaUITests.xctest */;
+			productReference = AC59B54724A661E000369F36 /* Syringe JumpUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -267,7 +267,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AC59B51D24A661DD00369F36 /* Build configuration list for PBXProject "Flappy Corona" */;
+			buildConfigurationList = AC59B51D24A661DD00369F36 /* Build configuration list for PBXProject "Syringe Jump" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -280,9 +280,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AC59B52124A661DD00369F36 /* Flappy Corona */,
-				AC59B53B24A661E000369F36 /* Flappy CoronaTests */,
-				AC59B54624A661E000369F36 /* Flappy CoronaUITests */,
+				AC59B52124A661DD00369F36 /* Syringe Jump */,
+				AC59B53B24A661E000369F36 /* Syringe JumpTests */,
+				AC59B54624A661E000369F36 /* Syringe JumpUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -454,12 +454,12 @@
 /* Begin PBXTargetDependency section */
 		AC59B53E24A661E000369F36 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AC59B52124A661DD00369F36 /* Flappy Corona */;
+			target = AC59B52124A661DD00369F36 /* Syringe Jump */;
 			targetProxy = AC59B53D24A661E000369F36 /* PBXContainerItemProxy */;
 		};
 		AC59B54924A661E000369F36 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AC59B52124A661DD00369F36 /* Flappy Corona */;
+			target = AC59B52124A661DD00369F36 /* Syringe Jump */;
 			targetProxy = AC59B54824A661E000369F36 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -605,7 +605,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3TAQ3RWTX2;
-				INFOPLIST_FILE = "Flappy Corona/Info.plist";
+				INFOPLIST_FILE = "Syringe Jump/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -626,7 +626,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3TAQ3RWTX2;
-				INFOPLIST_FILE = "Flappy Corona/Info.plist";
+				INFOPLIST_FILE = "Syringe Jump/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -648,7 +648,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3TAQ3RWTX2;
-				INFOPLIST_FILE = "Flappy CoronaTests/Info.plist";
+				INFOPLIST_FILE = SyrTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -659,7 +659,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flappy Corona.app/Flappy Corona";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Syringe Jump.app/Syringe Jump";
 			};
 			name = Debug;
 		};
@@ -671,7 +671,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3TAQ3RWTX2;
-				INFOPLIST_FILE = "Flappy CoronaTests/Info.plist";
+				INFOPLIST_FILE = SyrTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -682,7 +682,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flappy Corona.app/Flappy Corona";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Syringe Jump.app/Syringe Jump";
 			};
 			name = Release;
 		};
@@ -731,7 +731,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AC59B51D24A661DD00369F36 /* Build configuration list for PBXProject "Flappy Corona" */ = {
+		AC59B51D24A661DD00369F36 /* Build configuration list for PBXProject "Syringe Jump" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC59B54E24A661E000369F36 /* Debug */,
@@ -740,7 +740,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC59B55024A661E000369F36 /* Build configuration list for PBXNativeTarget "Flappy Corona" */ = {
+		AC59B55024A661E000369F36 /* Build configuration list for PBXNativeTarget "Syringe Jump" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC59B55124A661E000369F36 /* Debug */,
@@ -749,7 +749,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC59B55324A661E000369F36 /* Build configuration list for PBXNativeTarget "Flappy CoronaTests" */ = {
+		AC59B55324A661E000369F36 /* Build configuration list for PBXNativeTarget "Syringe JumpTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC59B55424A661E000369F36 /* Debug */,
@@ -758,7 +758,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC59B55624A661E000369F36 /* Build configuration list for PBXNativeTarget "Flappy CoronaUITests" */ = {
+		AC59B55624A661E000369F36 /* Build configuration list for PBXNativeTarget "Syringe JumpUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC59B55724A661E000369F36 /* Debug */,
