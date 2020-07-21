@@ -19,7 +19,12 @@ var highscore = 0
 class GameScene: SKScene, SKPhysicsContactDelegate {
     let defaults = UserDefaults()
   var ground = SKSpriteNode()
+    var ground2 = SKSpriteNode()
+    var ground3 = SKSpriteNode()
+
+
     var ghost = SKSpriteNode()
+   
     var wallPair = SKNode()
     var background = SKSpriteNode()
     var background2 = SKSpriteNode()
@@ -81,19 +86,19 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
              start.run(SKAction.scale(to: 3.0, duration: 0.3))
         
-        background = SKSpriteNode(imageNamed: "Background2")
+        background = SKSpriteNode(imageNamed: "bg")
         background.position = CGPoint(x: self.frame.width/2, y: self.frame.height/2)
-        background.size = CGSize(width: self.frame.width+5, height: self.frame.height)
+        background.size = CGSize(width: self.frame.width*1.06, height: self.frame.height)
 
         
-        background2 = SKSpriteNode(imageNamed: "Background2")
+        background2 = SKSpriteNode(imageNamed: "bg")
         background2.position = CGPoint(x: self.frame.width*1.5 , y: self.frame.height/2)
-        background2.size = CGSize(width: self.frame.width+5, height: self.frame.height)
+        background2.size = CGSize(width: self.frame.width*1.06, height: self.frame.height)
 
         
-        background3 = SKSpriteNode(imageNamed: "Background2")
+        background3 = SKSpriteNode(imageNamed: "bg")
         background3.position = CGPoint(x: self.frame.width*2.5, y: self.frame.height/2)
-        background3.size = CGSize(width: self.frame.width+5, height: self.frame.height)
+        background3.size = CGSize(width: self.frame.width*1.06, height: self.frame.height)
 
        
         addChild(background)
@@ -109,19 +114,48 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
           scoreLbl.fontSize = 90
           self.addChild(scoreLbl)
         
-        ground = SKSpriteNode(imageNamed: "ground3")
-               ground.size = CGSize(width: self.frame.width, height: self.frame.height/10+10)
+        ground = SKSpriteNode(imageNamed: "ground")
+        ground.size = CGSize(width: self.frame.size.width+5, height: self.frame.height/6.95)
                ground.position = CGPoint(x: Int(self.frame.width)/2, y: 0+Int(ground.frame.height)/2 )
-               ground.physicsBody = SKPhysicsBody(rectangleOf: ground.size)
+        ground.physicsBody = SKPhysicsBody(rectangleOf: ground.size)
                ground.physicsBody?.categoryBitMask = Physics.ground
                ground.physicsBody?.collisionBitMask = Physics.ghost
                ground.physicsBody?.contactTestBitMask = Physics.ghost
                ground.physicsBody?.affectedByGravity = false
                ground.physicsBody?.isDynamic = false
                ground.zPosition = 3
+        
+        ground2 = SKSpriteNode(imageNamed: "ground")
+        ground2.size = CGSize(width: self.frame.size.width+5, height: self.frame.height/6.95)
+            ground2.position = CGPoint(x: self.frame.width*1.5, y: ground.frame.height/2)
+        ground2.physicsBody =  SKPhysicsBody(rectangleOf: ground.size)
+               ground2.physicsBody?.categoryBitMask = Physics.ground
+               ground2.physicsBody?.collisionBitMask = Physics.ghost
+               ground2.physicsBody?.contactTestBitMask = Physics.ghost
+               ground2.physicsBody?.affectedByGravity = false
+               ground2.physicsBody?.isDynamic = false
+               ground2.zPosition = 3
+        
+        ground3 = SKSpriteNode(imageNamed: "ground")
+        ground3.size = CGSize(width: self.frame.size.width+5, height: self.frame.height/6.95)
+            ground3.position = CGPoint(x: self.frame.width*2.5, y: ground.frame.height/2)
+        ground3.physicsBody = SKPhysicsBody(rectangleOf: ground.size)
+               ground3.physicsBody?.categoryBitMask = Physics.ground
+               ground3.physicsBody?.collisionBitMask = Physics.ghost
+               ground3.physicsBody?.contactTestBitMask = Physics.ghost
+               ground3.physicsBody?.affectedByGravity = false
+               ground3.physicsBody?.isDynamic = false
+               ground3.zPosition = 3
+        
+        
+        
+        
+        
 
 
                addChild(ground)
+        addChild(ground2)
+        addChild(ground3)
                
                
                
@@ -279,6 +313,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 self.removeAllActions()
 
                 self.wallPair.removeAllActions()
+                background.removeAllActions()
+                background2.removeAllActions()
+                background3.removeAllActions()
+                
+                ground3.removeAllActions()
+                ground2.removeAllActions()
+                ground.removeAllActions()
 
                            createBTN()
                        }
@@ -319,6 +360,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                
                            died = true
                 self.removeAllActions()
+                background.removeAllActions()
+                background2.removeAllActions()
+                background3.removeAllActions()
+                
+                ground3.removeAllActions()
+                ground2.removeAllActions()
+                ground.removeAllActions()
 
                 self.wallPair.removeAllActions()
                 
@@ -347,11 +395,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         if gameStarted == false {
             
-            let parallax = SKAction.repeatForever(SKAction.move(by: CGVector(dx:-self.frame.size.width, dy:0), duration:2.35))
+            let parallax = SKAction.repeatForever(SKAction.move(by: CGVector(dx:-self.frame.size.width, dy:0), duration:2.325))
 
                           background.run(parallax)
                           background2.run(parallax)
                           background3.run(parallax)
+            ground.run(parallax)
+            ground2.run(parallax)
+            ground3.run(parallax)
             gameStarted = true
           run(flapSound)
             start.run(SKAction.scale(to: 0.001, duration: 0.3))
@@ -438,7 +489,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 
                 
                 let bottomWall = SKSpriteNode(imageNamed: "bottomWall")
-                bottomWall.position = CGPoint(x: self.frame.width + 100, y: self.frame.height/3.5-5 - 120 )
+                bottomWall.position = CGPoint(x: self.frame.width + 112, y: self.frame.height/3.5-5 - 120 )
                 bottomWall.size.height += 500
                 bottomWall.setScale(0.5)
                 
@@ -507,6 +558,18 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 background3.position.x = self.frame.size.width*2.5
                    
                   }
+        
+        if ground.position.x <= -self.frame.size.width/2 {
+            ground.position.x = self.frame.size.width*2.5
+        }
+        
+        if ground2.position.x <= -self.frame.size.width/2 {
+            ground2.position.x = self.frame.size.width*2.5
+        }
+        
+        if ground3.position.x <= -self.frame.size.width/2 {
+            ground3.position.x = self.frame.size.width*2.5
+        }
     }
    
 }
